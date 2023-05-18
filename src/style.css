@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s all;
+}
+
+body {
+    background: #f5b107;
+}
+
+.container {
+    max-width: 600px;
+    margin: 200px auto;
+    width: 100%;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    background: bisque;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    row-gap: 30px;
+}
+
+.todo__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.todo__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px chocolate;
+    background: #FFFFFF;
+}
+
+.todo__form-btn {
+    background: chocolate;
+}
+
+.todo__btn:hover {
+    box-shadow:
+            0 12px 16px 0 rgba(0,0,0,0.24),
+            0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.todo__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.todo__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f5b107;
+    border-radius: 10px;
+}
+
+.todo__text-btns {
+    display: flex;
+    column-gap: 10px;
+}
+
+.btns {
+    display: flex;
+     justify-content: space-between;
+    column-gap: 50px;
+}
+
+.todo__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:
+            0 8px 16px 0 rgba(0,0,0,0.2),
+            0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow:
+            0 12px 16px 0 rgba(0,0,0,0.24),
+            0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(4px);
+}
+
+.btn__all {
+    background: #f5b107;
+}
+
+.btn__delete, .btn__delete-all {
+    background: red;
+}
+
+.done, .btn__done, .btn__isDone {
+    background: green;
+}
+
+.important, .btn__important, .btn__isImportant {
+    background: #f36703;
+}
+
+.todo__btns-status {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+h1 {
+    text-align: center;
+}
